@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="662.0" prefWidth="896.0" xmlns="http://javafx.com/javafx/8.0.71" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane prefHeight="662.0" prefWidth="164.0" style="-fx-background-color: #0000FF;">
+         <children>
+            <Pane prefHeight="84.0" prefWidth="164.0" style="-fx-background-color: #3333CC;">
+               <children>
+                  <ImageView fitHeight="84.0" fitWidth="164.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@25.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <JFXButton layoutX="-7.0" layoutY="150.0" prefHeight="46.0" prefWidth="164.0" text="Accueil">
+               <font>
+                  <Font name="Eras Light ITC" size="24.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="28.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="‪C:\Users\Arnoldkom\Documents\NetBeansProjects\AphaSMSPro\src\Image\Home_48px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton layoutX="-7.0" layoutY="214.0" prefHeight="46.0" prefWidth="164.0" text="Accueil">
+               <font>
+                  <Font name="Eras Light ITC" size="24.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="28.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="‪C:\Users\Arnoldkom\Documents\NetBeansProjects\AphaSMSPro\src\Image\Home_48px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton layoutX="-7.0" layoutY="278.0" prefHeight="46.0" prefWidth="164.0" text="Accueil">
+               <font>
+                  <Font name="Eras Light ITC" size="24.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="28.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="‪C:\Users\Arnoldkom\Documents\NetBeansProjects\AphaSMSPro\src\Image\Home_48px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton layoutX="-7.0" layoutY="347.0" prefHeight="46.0" prefWidth="164.0" text="Accueil">
+               <font>
+                  <Font name="Eras Light ITC" size="24.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="28.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="‪C:\Users\Arnoldkom\Documents\NetBeansProjects\AphaSMSPro\src\Image\Home_48px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <Label layoutX="4.0" layoutY="636.0" prefHeight="25.0" prefWidth="156.0" text="Realisé par les 3il">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="164.0" prefHeight="40.0" prefWidth="732.0" style="-fx-background-color: #DDDDDD;">
+         <children>
+            <JFXButton layoutX="680.0" layoutY="2.0" prefHeight="29.0" prefWidth="52.0">
+               <graphic>
+                  <ImageView fitHeight="28.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="‪C:\Users\Arnoldkom\Documents\NetBeansProjects\AphaSMSPro\src\Image\Delete_48px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton layoutX="615.0" layoutY="1.0" prefHeight="38.0" prefWidth="52.0">
+               <graphic>
+                  <ImageView fitHeight="33.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="‪C:\Users\Arnoldkom\Documents\NetBeansProjects\AphaSMSPro\src\Image\Compress_48px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+</Pane>

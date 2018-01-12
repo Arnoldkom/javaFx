@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="706.0" prefWidth="1275.0" xmlns="http://javafx.com/javafx/8.0.71" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controleur.AbonneController">
+   <children>
+      <Pane layoutY="-14.0" prefHeight="720.0" prefWidth="103.0" style="-fx-background-color: #0099FF;">
+         <children>
+            <Pane prefHeight="84.0" prefWidth="103.0" style="-fx-background-color: #3333CC;">
+               <children>
+                  <ImageView fitHeight="46.0" fitWidth="101.0" layoutX="1.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image/25.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <JFXButton fx:id="accueil" layoutX="-7.0" layoutY="150.0" onAction="#btn_accueil" prefHeight="64.0" prefWidth="110.0" text=" " textFill="#f8f6f6">
+               <font>
+                  <Font name="Bauhaus 93" size="24.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image/Home_48px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="abonne" layoutX="-7.0" layoutY="214.0" onAction="#btn_zbonne" prefHeight="64.0" prefWidth="103.0" text=" " textFill="#f5f5f5">
+               <font>
+                  <Font name="Bauhaus 93" size="24.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image/User_48px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="parametre" layoutX="-7.0" layoutY="278.0" onAction="#btn_parametre" prefHeight="62.0" prefWidth="110.0" text=" " textFill="#fffefe">
+               <font>
+                  <Font name="Bauhaus 93" size="21.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image/Services_48px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="aide" layoutX="-7.0" layoutY="347.0" onAction="#btn_aide" prefHeight="64.0" prefWidth="110.0" text="  " textFill="#fffbfb">
+               <font>
+                  <Font name="Bauhaus 93" size="24.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image/Help_50px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Label layoutX="4.0" layoutY="667.0" prefHeight="25.0" prefWidth="156.0" text="Realisé par les 3il">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="102.0" prefHeight="40.0" prefWidth="1178.0" style="-fx-background-color: #DDDDDD;">
+         <children>
+            <JFXButton fx:id="close" layoutX="1115.0" layoutY="-4.0" onAction="#btn_close" prefHeight="29.0" prefWidth="52.0" textFill="#ebe0e0">
+               <graphic>
+                  <ImageView fitHeight="28.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image/Delete_48px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="min" layoutX="1065.0" layoutY="-6.0" prefHeight="11.0" prefWidth="61.0" textFill="#f2e5e5">
+               <graphic>
+                  <ImageView fitHeight="33.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image/Compress_48px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Pane fx:id="pane1" layoutX="102.0" layoutY="40.0" prefHeight="666.0" prefWidth="1178.0" style="-fx-background-color: white;">
+         <children>
+            <TableView fx:id="tabuser" layoutX="-1.0" layoutY="120.0" onMouseClicked="#klikTableData" prefHeight="499.0" prefWidth="886.0" stylesheets="@../Css/SMSCss.css">
+              <columns>
+                <TableColumn fx:id="colnumero" prefWidth="120.0" text="Numero" />
+                  <TableColumn fx:id="colnom" prefWidth="200.0" text="Nom et prenom" />
+                  <TableColumn fx:id="coltelephone" prefWidth="120.0" text="Telephone" />
+                  <TableColumn fx:id="colemail" prefWidth="170.0" text="Email" />
+                  <TableColumn fx:id="colautre" prefWidth="100.0" text="Autre" />
+                  <TableColumn fx:id="colaction" prefWidth="170.0" text="Action" />
+              </columns>
+               <padding>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </padding>
+            </TableView>
+            <Separator layoutX="884.0" layoutY="12.0" orientation="VERTICAL" prefHeight="625.0" prefWidth="8.0" style="-fx-background-color: #0099FF;" />
+            <Label layoutX="941.0" layoutY="69.0" prefHeight="36.0" prefWidth="216.0" text="Enregistrer un utilisateur" textFill="#426d86">
+               <font>
+                  <Font name="Bauhaus 93" size="19.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="numero" layoutX="941.0" layoutY="171.0" prefHeight="40.0" prefWidth="202.0" promptText="numero client">
+               <font>
+                  <Font name="Century Gothic" size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="nom" layoutX="941.0" layoutY="235.0" prefHeight="40.0" prefWidth="202.0" promptText="Nom et prenom">
+               <font>
+                  <Font name="Century Gothic" size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="tel" layoutX="941.0" layoutY="305.0" prefHeight="40.0" prefWidth="202.0" promptText="telephone">
+               <font>
+                  <Font name="Century Gothic" size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="email" layoutX="941.0" layoutY="381.0" prefHeight="40.0" prefWidth="202.0" promptText="Email">
+               <font>
+                  <Font name="Century Gothic" size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="autre" layoutX="941.0" layoutY="447.0" prefHeight="40.0" prefWidth="202.0" promptText="Autre">
+               <font>
+                  <Font name="Century Gothic" size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton fx:id="valide2" layoutX="908.0" layoutY="540.0" onAction="#btn_valide" prefHeight="41.0" prefWidth="117.0" style="-fx-background-color: #21DEEF; -fx-background-radius: 15;" text="valider" textFill="#3d7547">
+               <font>
+                  <Font name="Century Gothic" size="19.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="cancel2" layoutX="1042.0" layoutY="540.0" onAction="#btn_annuler" prefHeight="41.0" prefWidth="117.0" style="-fx-background-color: #FF6666; -fx-background-radius: 15;" text="annuler">
+               <font>
+                  <Font name="Century Gothic" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXTextField fx:id="recherche" layoutX="23.0" layoutY="623.0" onKeyReleased="#aksiCari" prefHeight="25.0" prefWidth="228.0" promptText="Rechercher par rapport au nom">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXTextField>
+            <Label layoutX="37.0" layoutY="69.0" prefHeight="36.0" prefWidth="285.0" text="listes des abonnés enregistrée" textFill="#426d86">
+               <font>
+                  <Font name="Bauhaus 93" size="19.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="rappel" layoutX="676.0" layoutY="75.0" onAction="#btn_rappel" prefHeight="45.0" prefWidth="202.0" style="-fx-background-color: #33CCFF; -fx-background-radius: 25;" text="Rappel Mail admin" textFill="#184875">
+               <graphic>
+                  <ImageView fitHeight="33.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image/Gmail_48px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Book Antiqua" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="rappel1" layoutX="467.0" layoutY="75.0" onAction="#btn_rappel1" prefHeight="45.0" prefWidth="202.0" style="-fx-background-color: #33CCFF; -fx-background-radius: 25;" text="Rappel Mail user" textFill="#184875">
+               <graphic>
+                  <ImageView fitHeight="33.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image/Gmail_48px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Book Antiqua" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Separator layoutX="-1.0" layoutY="658.0" prefHeight="13.0" prefWidth="1178.0" style="-fx-background-color: #0099FF;" />
+            <Separator layoutX="1165.0" layoutY="1.0" orientation="VERTICAL" prefHeight="666.0" prefWidth="15.0" style="-fx-background-color: #0099FF;" />
+         </children>
+      </Pane>
+      <Pane fx:id="pane2" layoutX="101.0" layoutY="40.0" prefHeight="658.0" prefWidth="1168.0" style="-fx-background-color: white;">
+         <children>
+            <TableView fx:id="tab3" layoutX="103.0" layoutY="192.0" prefHeight="357.0" prefWidth="948.0" style="-fx-background-size: 25;" stylesheets="@../Css/SMSCss_1.css">
+              <columns>
+                <TableColumn fx:id="colnom2" prefWidth="300.0" text="Nom" />
+                <TableColumn fx:id="coltel2" prefWidth="250.0" text="Telephone" />
+                  <TableColumn fx:id="colabonnement2" prefWidth="250.0" text="Abonnement" />
+                  <TableColumn fx:id="coljour" prefWidth="140.0" text="Jours restant" />
+              </columns>
+            </TableView>
+            <Label layoutX="323.0" layoutY="87.0" prefHeight="73.0" prefWidth="462.0" text="Rappel Statut des abonnés " textFill="#ae3535">
+               <font>
+                  <Font name="Chiller" size="51.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="jour10" layoutX="342.0" layoutY="586.0" onAction="#btn_jour1" prefHeight="36.0" prefWidth="101.0" style="-fx-background-color: #33FFFF; -fx-background-radius: 15;" text="jours &lt; 10" textFill="#110b57">
+               <font>
+                  <Font name="Eras Medium ITC" size="16.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="jour20" layoutX="470.0" layoutY="586.0" onAction="#btn_jour2" prefHeight="36.0" prefWidth="101.0" style="-fx-background-color: #33FFFF; -fx-background-radius: 15;" text="jours &gt; 10" textFill="#110b57">
+               <font>
+                  <Font name="Eras Medium ITC" size="16.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="termine" layoutX="596.0" layoutY="586.0" onAction="#btn_termine" prefHeight="36.0" prefWidth="177.0" style="-fx-background-color: #33FFFF; -fx-background-radius: 15;" text="Abonnement terminé" textFill="#110b57">
+               <font>
+                  <Font name="Eras Medium ITC" size="16.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+</Pane>

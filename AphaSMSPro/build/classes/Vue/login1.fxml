@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="panelogin" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="285.0" prefWidth="469.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.71" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controleur.LoginControleur">
+   <children>
+      <ImageView fitHeight="64.0" fitWidth="200.0" layoutX="27.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/25.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="close4" layoutX="422.0" layoutY="-2.0" onAction="#btn_close4" prefHeight="41.0" prefWidth="45.0" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="31.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Image/Delete_48px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <ImageView fitHeight="186.0" fitWidth="200.0" layoutX="251.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/illustration_01.png" />
+         </image>
+      </ImageView>
+      <Separator layoutX="235.0" opacity="0.41" orientation="VERTICAL" prefHeight="285.0" prefWidth="4.0" style="-fx-background-color: blue;" />
+      <JFXTextField id="user" fx:id="user" layoutX="35.0" layoutY="118.0" prefHeight="41.0" prefWidth="176.0" promptText="Nom utilisateur">
+         <font>
+            <Font name="Leelawadee UI Semilight" size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField id="pass" fx:id="pass" layoutX="35.0" layoutY="172.0" prefHeight="41.0" prefWidth="176.0" promptText="Mot de passe">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXButton fx:id="valide4" layoutX="14.0" layoutY="243.0" onAction="#btn_valide4" prefHeight="28.0" prefWidth="94.0" style="-fx-background-color: #21DEEF; -fx-background-radius: 15;" text="valider" textFill="#3d7547">
+         <font>
+            <Font name="Century Gothic" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="cancel4" layoutX="123.0" layoutY="243.0" onAction="#btn_annuler4" prefHeight="28.0" prefWidth="105.0" style="-fx-background-color: #FF6666; -fx-background-radius: 15;" text="annuler">
+         <font>
+            <Font name="Century Gothic" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</Pane>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="panne" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="643.0" prefWidth="918.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.71" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controleur.AbonnementControleur">
+   <children>
+      <AnchorPane prefHeight="643.0" prefWidth="67.0" style="-fx-background-color: #0099FF;">
+         <children>
+            <JFXButton fx:id="accueil2" layoutY="141.0" onAction="#btn_accueil2" prefHeight="58.0" prefWidth="47.0" text=" " textFill="#f2e5e5">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image/Home_48px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="abonne2" layoutY="206.0" onAction="#btn_abonne2" prefHeight="41.0" prefWidth="56.0" text=" " textFill="#f2e5e5">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image/User_48px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="parametre2" layoutY="281.0" onAction="#btn_parametre2" prefHeight="41.0" prefWidth="56.0" text=" " textFill="#f2e5e5">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image/Services_48px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="aide2" layoutY="353.0" onAction="#btn_aide2" prefHeight="41.0" prefWidth="56.0" text=" " textFill="#f2e5e5">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image/Help_50px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <ImageView fitHeight="60.0" fitWidth="65.0" layoutX="1.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Image/25.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="67.0" prefHeight="38.0" prefWidth="851.0" style="-fx-background-color: #DDDDDD;">
+         <children>
+            <JFXButton fx:id="close3" layoutX="801.0" layoutY="-4.0" onAction="#btn_close3" prefHeight="29.0" prefWidth="52.0" text=" " textFill="#ebe0e0">
+               <graphic>
+                  <ImageView fitHeight="28.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image/Delete_48px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="min3" layoutX="754.0" layoutY="-6.0" prefHeight="11.0" prefWidth="61.0" text=" " textFill="#f2e5e5">
+               <graphic>
+                  <ImageView fitHeight="33.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image/Compress_48px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="67.0" layoutY="38.0" prefHeight="607.0" prefWidth="851.0" style="-fx-background-color: white;" stylesheets="@../Css/SMSCss.css">
+         <children>
+            <TableView fx:id="tababonne" layoutY="94.0" prefHeight="454.0" prefWidth="605.0">
+              <columns>
+                <TableColumn fx:id="colnumero1" prefWidth="100.0" text="numero" />
+                <TableColumn fx:id="coltype" prefWidth="120.0" text="Type abonnement" />
+                  <TableColumn fx:id="coldatedebut" prefWidth="120.0" text="Date debut" />
+                  <TableColumn fx:id="coldatefin" prefWidth="120.0" text="Date fin" />
+                  <TableColumn fx:id="colaction1" prefWidth="150.0" text="Action" />
+              </columns>
+            </TableView>
+            <Separator layoutX="606.0" layoutY="94.0" orientation="VERTICAL" prefHeight="454.0" prefWidth="9.0" style="-fx-background-color: #0099FF;" />
+            <Label layoutX="621.0" layoutY="94.0" prefHeight="36.0" prefWidth="177.0" text="Enregistrer un utilisateur" textFill="#426d86">
+               <font>
+                  <Font name="Bauhaus 93" size="16.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="numero1" layoutX="620.0" layoutY="145.0" prefHeight="40.0" prefWidth="177.0" promptText="numero abonnement">
+               <font>
+                  <Font name="Century Gothic" size="15.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="type" layoutX="620.0" layoutY="208.0" prefHeight="40.0" prefWidth="177.0" promptText="type abonnement">
+               <font>
+                  <Font name="Century Gothic" size="15.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton fx:id="valide3" layoutX="621.0" layoutY="409.0" onAction="#btn_valide3" prefHeight="28.0" prefWidth="105.0" style="-fx-background-color: #21DEEF; -fx-background-radius: 15;" text="valider" textFill="#3d7547">
+               <font>
+                  <Font name="Century Gothic" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="cancel3" layoutX="726.0" layoutY="409.0" onAction="#btn_annuler3" prefHeight="28.0" prefWidth="105.0" style="-fx-background-color: #FF6666; -fx-background-radius: 15;" text="annuler">
+               <font>
+                  <Font name="Century Gothic" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXDatePicker fx:id="datedebut" layoutX="623.0" layoutY="279.0" prefHeight="40.0" prefWidth="177.0" promptText="Date debut" />
+            <JFXDatePicker fx:id="datefin" layoutX="623.0" layoutY="343.0" prefHeight="40.0" prefWidth="177.0" promptText="Date fin" />
+            <JFXTextField fx:id="recherche2" layoutX="14.0" layoutY="564.0" onKeyReleased="#aksiCari" prefHeight="25.0" prefWidth="228.0" promptText="Rechercher par rapport...">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </JFXTextField>
+            <Label fx:id="setnumero" layoutX="84.0" layoutY="52.0" text="Numero">
+               <font>
+                  <Font name="Buxton Sketch" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="setnom" layoutX="291.0" layoutY="52.0" text="Nom et prenom">
+               <font>
+                  <Font name="Buxton Sketch" size="20.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="31.0" fitWidth="41.0" layoutX="249.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Image/User_48px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="28.0" fitWidth="41.0" layoutX="47.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Image/Checkmark_40px.png" />
+               </image>
+            </ImageView>
+            <Separator layoutX="852.0" orientation="VERTICAL" prefHeight="607.0" prefWidth="15.0" style="-fx-background-color: #0099FF;" />
+            <Separator layoutY="601.0" prefHeight="8.0" prefWidth="867.0" style="-fx-background-color: #0099FF;" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
